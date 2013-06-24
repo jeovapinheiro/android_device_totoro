@@ -10,6 +10,7 @@ bin/runSysCmd
 bin/usb_portd
 bin/memsicd
 bin/mfgloader
+bin/vold
 etc/asound.conf
 etc/audio/LVVEFS_Rx_Configuration.txt
 etc/audio/LVVEFS_Tx_Configuration.txt
