@@ -20,9 +20,6 @@ etc/audio/Rx_ControlParams_WIRED_HEADSET_WIDEBAND.txt
 etc/audio/Tx_ControlParams_EARPIECE_WIDEBAND.txt
 etc/audio/Tx_ControlParams_WIRED_HEADPHONE_WIDEBAND.txt
 etc/audio/Tx_ControlParams_WIRED_HEADSET_WIDEBAND.txt
-etc/glconfig.xml
-etc/glconfig2075.xml
-etc/4751.xml
 etc/gps.conf
 #etc/media_profiles.xml
 etc/aacenc_image.bin
@@ -39,11 +36,12 @@ etc/rndis.sh
 etc/setusbmode.txt
 etc/spn-conf.xml
 etc/usb_portd.conf
-etc/usb_thether.sh
+etc/usb_tether.sh
 etc/usbconfig.sh
-etc/wifi/bcmdhd_aps.bin_b2
-etc/wifi/bcmdhd_sta.bin_b2
-etc/wifi/nvram_net.txt
+etc/wifi/bcm4330_aps.bin
+etc/wifi/bcm4330_sta.bin
+etc/wifi/bcm4330_mfg.bin
+etc/wifi/nvramnet.txt
 etc/wifi/wpa_supplicant.conf
 etc/vt/3g324mConfig.val
 lib/hw/alsa.default.so
@@ -56,7 +54,7 @@ lib/lib_Samsung_Acoustic_Module_Llite.so
 lib/lib_Samsung_Resampler.so
 lib/lib_Samsung_Sound_Booster.so
 lib/libat.so
-lib/ibaudiopolicy.so
+lib/libaudiopolicy.so
 lib/libaudio.so
 lib/libbrcm_ril.so
 lib/libBRCM_omx_core.so
@@ -74,7 +72,7 @@ lib/libsamsungAcousticeq.so
 lib/libsamsungSoundbooster.so
 lib/libsoundalive.so
 lib/libsoc.so
-lib/iburilclient.so
+lib/liburilclient.so
 lib/libvorbisidec.so
 lib/libbrcm_ril.so
 lib/libncurses.so
