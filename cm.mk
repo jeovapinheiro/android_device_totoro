@@ -17,7 +17,7 @@ $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/totoro/device_totoro.mk)
+$(call inherit-product, device/samsung/totoro/totoro.mk)
 
 # Include FM-Radio stuff
 #$(call inherit-product, vendor/cm/products/bcm_fm_radio.mk)
@@ -28,12 +28,6 @@ PRODUCT_DEVICE := totoro
 PRODUCT_MODEL := GT-s5360
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_CHARACTERISTICS := phone
-
-# Device identifier. This must come after all inclusions
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=lge_pecan \
-    BUILD_FINGERPRINT="samsung/totoro/totoro:4.0.4/GRI40/19C11F164C:user/release-keys" \
-    PRIVATE_BUILD_DESC="totoro-user 4.0.4 GRI40 19C11F164C release-keys"
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := totoro
