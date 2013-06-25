@@ -13,16 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# BoardConfig.mk
-#
-# Product-specific compile-time definitions.
-#
-
-# Set this up here so that BoardVendorConfig.mk can override it
-
-
-
-
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/totoro/BoardConfigVendor.mk
 
@@ -39,19 +29,14 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_PROVIDES_INIT := true
 TARGET_PROVIDES_INIT_TARGET_RC := true
 
-
-USE_CAMERA_STUB := false
-
 #ics stuff
 BOARD_USE_LEGACY_TOUCHSCREEN := true
-
 
 # Audio
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_USES_ALSA_AUDIO := true
 BUILD_WITH_ALSA_UTILS := true
 COMMON_GLOBAL_CFLAGS += -DMR0_AUDIO_BLOB -DSAMSUNG_BCM_AUDIO_BLOB
-
 
 # RIL
 BOARD_USES_LEGACY_RIL := true
@@ -69,10 +54,6 @@ BOARD_EGL_CFG := device/samsung/totoro/prebuilt/lib/egl/egl.cfg
 BOARD_NO_RGBX_8888 := true
 ENABLE_WEBGL := true
 
-
-BOARD_MOBILEDATA_INTERFACE_NAME := "pdp0"
-
-
 # Device related defines
 BOARD_NAND_PAGE_SIZE := 4096 -s 128
 BOARD_KERNEL_BASE := 0x81600000
@@ -81,7 +62,6 @@ BOARD_PAGE_SIZE := 0x00001000
 BOARD_KERNEL_CMDLINE := 
 
 # Recovery
-
 TARGET_PREBUILT_KERNEL := device/samsung/totoro/kernel
 BOARD_BML_RECOVERY := /dev/block/bml8
 TARGET_BOOTLOADER_BOARD_NAME := totoro
@@ -98,21 +78,24 @@ TARGET_RECOVERY_INITRC := device/samsung/totoro/recovery.rc
 #TARGET_KERNEL_CONFIG := bcm21553_totoro_05_cm9_defconfig
 #TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
-
-
 # Browser / Stagefright
 JS_ENGINE := v8
 HTTP := chrome
 WITH_JIT := true
 ENABLE_JSC_JIT := true
 
-
 #usb
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/lm-2/gadget/lun0/file"
 
-
 # Wifi related defines
+BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
+WPA_SUPPLICANT_VERSION           := VER_0_8_X
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+BOARD_HOSTAPD_DRIVER             := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_bcmdhd
+BOARD_WLAN_DEVICE                := bcmdhd
+BOARD_WLAN_DEVICE_REV            := bcm4334
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/dhd.ko"
 WIFI_DRIVER_FW_PATH_STA          := "/system/etc/firmware/fw_bcm4330_b2.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/system/etc/firmware/fw_bcm4330_apsta_b2.bin"
@@ -126,6 +109,3 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BT_ALT_STACK := true
 BRCM_BT_USE_BTL_IF := true
 BRCM_BTL_INCLUDE_A2DP := true
-
-
-
