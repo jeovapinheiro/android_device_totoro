@@ -69,7 +69,16 @@ PRODUCT_COPY_FILES += \
     device/samsung/totoro/prebuilt/root/rfs_fat.ko:root/rfs_fat.ko \
     device/samsung/totoro/prebuilt/root/rfs_glue.ko:root/rfs_glue.ko \
     device/samsung/totoro/prebuilt/root/j4fs.ko:root/j4fs.ko \
-    device/samsung/totoro/prebuilt/root/sec_param.ko:root/sec_param.ko \
+    device/samsung/totoro/prebuilt/root/sec_param.ko:root/sec_param.ko
+    
+# Keylayout
+PRODUCT_COPY_FILES += \
+	device/samsung/totoro/prebuilt/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+	device/samsung/totoro/prebuilt/usr/keylayout/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
+	device/samsung/totoro/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
+	device/samsung/totoro/prebuilt/usr/keylayout/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
+	device/samsung/totoro/prebuilt/usr/keylayout/sec_key.kl:system/usr/keylayout/sec_key.kl \
+	device/samsung/totoro/prebuilt/usr/keylayoutsec_keypad.kl:system/usr/keylayout/sec_keypad.kl
 
 # Board-specific init
 PRODUCT_COPY_FILES += \
