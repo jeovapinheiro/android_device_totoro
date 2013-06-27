@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/totoro/prebuilt/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
 	device/samsung/totoro/prebuilt/usr/keylayout/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
 	device/samsung/totoro/prebuilt/usr/keylayout/sec_key.kl:system/usr/keylayout/sec_key.kl \
-	device/samsung/totoro/prebuilt/usr/keylayoutsec_keypad.kl:system/usr/keylayout/sec_keypad.kl
+	device/samsung/totoro/prebuilt/usr/keylayout/sec_keypad.kl:system/usr/keylayout/sec_keypad.kl
 
 # Board-specific init
 PRODUCT_COPY_FILES += \
