@@ -49,6 +49,12 @@ BOARD_V4L2_DEVICE := /dev/video2
 BOARD_CAMERA_DEVICE := /dev/video0
 BOARD_USE_JPEG := true
 
+# USB
+BOARD_USE_USB_MASS_STORAGE_SWITCH := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/lm-2/gadget/lun0/file"
+BOARD_UMS_LUNFILE := "/sys/devices/lm-2/gadget/lun0/file"
+
+
 #3D
 BOARD_EGL_CFG := device/samsung/totoro/prebuilt/lib/egl/egl.cfg
 BOARD_NO_RGBX_8888 := true
