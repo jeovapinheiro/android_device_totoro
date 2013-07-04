@@ -42,3 +42,17 @@ dalvik.vm.execution-mode=int:jit
 dalvik.vm.dexopt-data-only=1
 persist.sys.use_dithering=2
 persist.sys.usb.config=mass_storage
+
+#Tweaks
+alsa.mixer.playback.master=Speaker
+alsa.mixer.capture.master=Mic
+alsa.mixer.playback.earpiece=Earpiece
+alsa.mixer.capture.earpiece=Mic
+alsa.mixer.playback.headset=Headset
+alsa.mixer.capture.headset=Mic
+alsa.mixer.playback.speaker=Speaker
+alsa.mixer.capture.speaker=Mic
+alsa.mixer.playback.bt.sco=BTHeadset
+alsa.mixer.capture.bt.sco=BTHeadset
+alsa.mixer.playback.bt.a2dp=BTHeadset
+alsa.mixer.capture.bt.a2dp=BTHeadset
